@@ -190,7 +190,16 @@ namespace HumaneSociety
 
         internal static Animal GetAnimalByID(int id)
         {
-            throw new NotImplementedException();
+            Animal animalFromDb = db.Animals.Where(a => a.AnimalId == id).FirstOrDefault();
+
+            if (animalFromDb == null)
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+                return animalFromDb;
+            }
         }
 
         internal static void UpdateAnimal(int animalId, Dictionary<int, string> updates)
@@ -225,7 +234,16 @@ namespace HumaneSociety
         
         internal static Room GetRoom(int animalId)
         {
-            throw new NotImplementedException();
+            Room animalFromDb = db.Rooms.Where(a => a.AnimalId == animalId).FirstOrDefault();
+
+            if (animalFromDb == null)
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+                return animalFromDb;
+            }
         }
         
         internal static int GetDietPlanId(string dietPlanName)
