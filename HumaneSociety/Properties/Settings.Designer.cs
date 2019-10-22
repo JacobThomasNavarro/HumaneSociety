@@ -21,18 +21,21 @@ namespace HumaneSociety.Properties {
             get {
                 return defaultInstance;
             }
+
+
         }
-        
+
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=HumaneSociety;Integrated Security=True;Encrypt=Fals" +
-            "e;TrustServerCertificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-HG26MNA\\SQLEXPRESS;Initial Catalog=HumaneSociety;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")]
+
         public string HumaneSocietyConnectionString {
             get {
                 return ((string)(this["HumaneSocietyConnectionString"]));
             }
         }
+<<<<<<< HEAD
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -103,5 +106,7 @@ namespace HumaneSociety.Properties {
                 return ((string)(this["HumaneSocietyConnectionString5"]));
             }
         }
+=======
+>>>>>>> a2ee48d6dc6939964a7802435816b8ca5ebf768e
     }
 }

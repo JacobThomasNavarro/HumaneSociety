@@ -183,8 +183,8 @@ namespace HumaneSociety
             }
             else
             {
-                db.Animals.InsertOnSubmit(animal);
-                db.SubmitChanges();
+                //db.Animals.InsertOnSubmit(animal);
+                //db.SubmitChanges();
             }
             
             ////throw new NotImplementedException();

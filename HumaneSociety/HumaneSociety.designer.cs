@@ -63,6 +63,7 @@ namespace HumaneSociety
     partial void InsertShot(Shot instance);
     partial void UpdateShot(Shot instance);
     partial void DeleteShot(Shot instance);
+<<<<<<< HEAD:HumaneSociety/HumaneSociety.designer.cs
         #endregion
         public HumaneSocietyDataContext() :
                 base(global::HumaneSociety.Properties.Settings.Default.HumaneSocietyConnectionString5, mappingSource)
@@ -72,6 +73,20 @@ namespace HumaneSociety
 
 
         public HumaneSocietyDataContext(string connection) : 
+=======
+    partial void InsertUSState(USState instance);
+    partial void UpdateUSState(USState instance);
+    partial void DeleteUSState(USState instance);
+    #endregion
+		
+		public HumaneSocietyDataContext() : 
+				base(global::HumaneSociety.Properties.Settings.Default.HumaneSocietyConnectionString, mappingSource)
+		{
+			OnCreated();
+		}
+		
+		public HumaneSocietyDataContext(string connection) : 
+>>>>>>> a2ee48d6dc6939964a7802435816b8ca5ebf768e:HumaneSociety/HumaneSocietyDataContext.designer.cs
 				base(connection, mappingSource)
 		{
 			OnCreated();
