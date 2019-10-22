@@ -242,7 +242,7 @@ namespace HumaneSociety
                 Query.RemoveAnimal(animal);
             }
         }
-        private void AddAnimal()
+        public void AddAnimal()
         {
             Console.Clear();
 

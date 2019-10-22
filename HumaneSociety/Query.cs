@@ -172,7 +172,20 @@ namespace HumaneSociety
         // TODO: Animal CRUD Operations
         internal static void AddAnimal(Animal animal)
         {
-            throw new NotImplementedException();
+            //Animal animalFromDb = db.Animals.Where(a => a.AnimalId == animal.AnimalId).FirstOrDefault();
+
+            //animalFromDb.CategoryId = animal.CategoryId;
+            if(animal == null)
+            {
+                throw new NotImplementedException();
+            }
+            else
+            {
+                db.Animals.InsertOnSubmit(animal);
+                db.SubmitChanges();
+            }
+            
+            ////throw new NotImplementedException();
         }
 
         internal static Animal GetAnimalByID(int id)
@@ -208,15 +221,14 @@ namespace HumaneSociety
         // TODO: Misc Animal Things
         internal static int GetCategoryId(string categoryName)
         {
-            Category animalFromDb = db.Categories.Where(c => c.Name == categoryName).FirstOrDefault();
-
-            if (animalFromDb == null)
+            if(categoryName == null)
             {
-                throw new NullReferenceException();
+                throw new NotImplementedException();
             }
             else
             {
-                return animalFromDb.CategoryId;
+                Category category = db.Categories.Where(c => c.Name == categoryName).FirstOrDefault();
+                return category.CategoryId;
             }
         }
         
