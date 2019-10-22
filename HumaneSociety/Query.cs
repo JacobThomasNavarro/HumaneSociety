@@ -174,13 +174,30 @@ namespace HumaneSociety
         internal static void AddAnimal(Animal animal)
         {
 
-            Animal animalFromDb = db.Animals.Where
+            //Animal animalFromDb = db.Animals.Where(a => a.AnimalId == animal.AnimalId).FirstOrDefault();
+
+            //animalFromDb.CategoryId = animal.CategoryId;
+            if(animal == null)
+            {
+                throw new NotImplementedException();
+            }
+            else
+            {
+                db.Animals.InsertOnSubmit(animal);
+                db.SubmitChanges();
+            }
+            
+            ////throw new NotImplementedException();
+
         }
 
         internal static Animal GetAnimalByID(int id)
         {
 
+
             Animal animalFromDb = db.Animals.Where(a => a.AnimalId == id).FirstOrDefault();
+
+
             if (animalFromDb == null)
             {
                 throw new NullReferenceException();
@@ -211,17 +228,43 @@ namespace HumaneSociety
         // TODO: Misc Animal Things
         internal static int GetCategoryId(string categoryName)
         {
-            throw new NotImplementedException();
+            if(categoryName == null)
+            {
+                throw new NotImplementedException();
+            }
+            else
+            {
+                Category category = db.Categories.Where(c => c.Name == categoryName).FirstOrDefault();
+                return category.CategoryId;
+            }
         }
 
         internal static Room GetRoom(int animalId)
         {
-            throw new NotImplementedException();
+            Room animalFromDb = db.Rooms.Where(a => a.AnimalId == animalId).FirstOrDefault();
+
+            if (animalFromDb == null)
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+                return animalFromDb;
+            }
         }
 
         internal static int GetDietPlanId(string dietPlanName)
         {
-            throw new NotImplementedException();
+            DietPlan animalFromDb = db.DietPlans.Where(d => d.Name == dietPlanName).FirstOrDefault();
+
+            if (animalFromDb == null)
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+                return animalFromDb.DietPlanId;
+            }
         }
 
         // TODO: Adoption CRUD Operations
