@@ -1,0 +1,46 @@
+INSERT INTO Categories VALUES('Dog');
+INSERT INTO Categories VALUES('Cat');
+INSERT INTO Categories VALUES('Bird');
+INSERT INTO Categories VALUES('Rabbit');
+INSERT INTO Categories VALUES('Snake');
+
+INSERT INTO DietPlans VALUES('Dog Food', 'Meat', '2');
+INSERT INTO DietPlans VALUES('Cat Food', 'Fish Meat', '1');
+INSERT INTO DietPlans VALUES('Bird Food', 'Seeds', '1');
+INSERT INTO DietPlans VALUES('Rabbit Food', 'Carrots', '2');
+INSERT INTO DietPlans VALUES('Snake Food', 'Mice', '2');
+
+INSERT INTO Employees VALUES('Hak', 'Lee', 'HakJae', 'hakjae', '1111', 'jae9632@hotmail.com');
+INSERT INTO Employees VALUES('Jake', 'Navarro', 'JakeNavarro', 'jakenavarro', '2222', 'jt10navarro@gmail.com');
+INSERT INTO Employees VALUES('Ahnikka', 'Hamilton', 'AhnikkaHamilton', 'ahnikkahamilton', '3333', 'ahnikka@gmail.com');
+INSERT INTO Employees VALUES('Danny', 'Serra', 'DannySerra', 'dannyserra', '4444', 'danny@gmail.com');
+INSERT INTO Employees VALUES('Trevor', 'Clements', 'TrevorClements', 'trevorclements', '5555', 'trevor@gmail.com');
+
+INSERT INTO Clients VALUES('Michael', 'Terrill', 'MichaelTerrill', 'michaelterrill', 3, 'michael@gmail.com');
+INSERT INTO Clients VALUES('Michael', 'Heinisch', 'MichaelHeinisch', 'michaelheinisch', 4, 'michael@gmail.com');
+INSERT INTO Clients VALUES('Brad', 'Jakubowski', 'BradJakubowski', 'bradjakubowski', 5, 'brad@gmail.com');
+INSERT INTO Clients VALUES('Nevin', 'Seibel', 'NevinSeibel', 'nevinseibel', 6, 'nevin@gmail.com');
+INSERT INTO Clients VALUES('David', 'Lagrange', 'DavidLagrange', 'davidlagrange', 7, 'david@gmail.com');
+
+INSERT INTO Addresses VALUES('313 N. Plankinton Ave.', 'Milwaukee', 49, '53203');
+INSERT INTO Addresses VALUES('314 N. Plankinton Ave.', 'Milwaukee', 49, '53203');
+INSERT INTO Addresses VALUES('315 N. Plankinton Ave.', 'Milwaukee', 49, '53203');
+INSERT INTO Addresses VALUES('316 N. Plankinton Ave.', 'Milwaukee', 49, '53203');
+INSERT INTO Addresses VALUES('317 N. Plankinton Ave.', 'Milwaukee', 49, '53203');
+
+INSERT INTO Animals VALUES('Spot', '75', '5', 'Hyper', 1, 1, 'male', 'available', 1, 1, 1);
+INSERT INTO Animals VALUES('Vicky', '30', '7', 'Chill', 1, 1, 'female', 'available', 2, 2, 2);
+INSERT INTO Animals VALUES('Dee', '5', '5', 'Loud', 1, 1, 'male', 'available', 3, 3, 3);
+INSERT INTO Animals VALUES('Hopper', '20', '1', 'Jumpy', 1, 1, 'male', 'available', 4, 4, 4);
+INSERT INTO Animals VALUES('Slitherin', '4', '9', 'Friendly', 1, 1, 'male', 'available', 5, 5, 5);
+
+INSERT INTO Rooms VALUES('1', 5);
+INSERT INTO Rooms VALUES('2', 6);
+INSERT INTO Rooms VALUES('3', 7);
+INSERT INTO Rooms VALUES('4', 8);
+INSERT INTO Rooms VALUES('5', 9);
+INSERT INTO Rooms VALUES('6', null);
+INSERT INTO Rooms VALUES('7', null);
+INSERT INTO Rooms VALUES('8', null);
+INSERT INTO Rooms VALUES('9', null);
+INSERT INTO Rooms VALUES('10', null);
