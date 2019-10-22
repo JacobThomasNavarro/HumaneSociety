@@ -1,0 +1,14 @@
+INSERT INTO Categories VALUES('Dog');
+INSERT INTO Categories VALUES('Cat');
+INSERT INTO Categories VALUES('Bird');
+INSERT INTO Categories VALUES('Rabbit');
+INSERT INTO Categories VALUES('Snake');
+
+INSERT INTO DietPlans VALUES('Dog Food', 'Meat', '2');
+INSERT INTO DietPlans VALUES('Cat Food', 'Fish Meat', '1');
+INSERT INTO DietPlans VALUES('Bird Food', 'Seeds', '1');
+INSERT INTO DietPlans VALUES('Rabbit Food', 'Carrots', '2');
+INSERT INTO DietPlans VALUES('Snake Food', 'Mice', '2');
+
+INSERT INTO Employees VALUES('Hak', 'Lee', 'HakJae', 'hakjae', '1111', 'jae9632@hotmail.com');
+INSERT INTO Employees VALUES('Jake', 'Navarro', 'JakeNavarro', 'jakenavarro', '2222', 'jt10navarro@gmail.com');
